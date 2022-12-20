@@ -17,7 +17,7 @@
     <div class="contenu">
       <div class="background">
         <div class="verso">
-          <div class="cvc-text"><p>000</p></div>
+          <div class="cvc-text"><p id="cvc-text">000</p></div>
           <img src="./bg-card-back.png" alt="" />
         </div>
 
@@ -25,35 +25,59 @@
           <div class="circle"></div>
           <div class="petit-circle"></div>
 
-          <div class="num-text"><p>0000 0000 0000 0000</p></div>
-          <div class="name-text"><p>John Do</p></div>
-          <div class="date-text"><p>00/OO</p></div>
+          <div class="num-text"><p id="num-text">0000 0000 0000 0000</p></div>
+          <div class="name-text"><p id="name-text">John Do</p></div>
+          <div class="date-text">
+            <span id="month-text" class="month-text">00</span>
+            <span>/</span>
+            <span id="year-text" class="year-text">00</span>
+          </div>
           <img src="./bg-card-front.png" alt="" />
         </div>
       </div>
       <div class="input">
         <div class="info">
           <p>CARDHOLDER NAME</p>
-          <input type="text" placeholder="ex John Do" />
-          <p1></p1>
+          <input
+            type="text"
+            id="lengthName"
+            class="nom"
+            placeholder="ex John Do"
+          />
+          <p1 id="errorName"></p1>
           <p>CARD NUMBER</p>
-          <input type="text" placeholder="ex 1234 5678 8765 4321" />
-          <p2></p2>
+          <input
+            type="text"
+            class="num"
+            id="lengthNum"
+            placeholder="ex 1234 5678 8765 4321"
+          />
+          <p2 id="errorNum"></p2>
         </div>
         <div class="datecvc">
           <div class="date">
             <p>EXP. DATE (MM/YY)</p>
-            <input type="text" placeholder="MM" />
-            <input type="text" placeholder="YY" />
-            <p3></p3>
+            <input
+              type="text"
+              placeholder="MM"
+              class="month"
+              id="lengthMonth"
+            />
+            <input type="text" placeholder="YY" class="year" id="lengthYear" />
+            <p3 id="errorDate"></p3>
           </div>
           <div class="cvc">
             <p>CVC</p>
-            <input type="text" placeholder="ex 123" />
-            <p4></p4>
+            <input
+              type="text"
+              placeholder="ex 123"
+              class="cvcInput"
+              id="lengthCvc"
+            /><br />
+            <p4 id="errorCvc"></p4>
           </div>
         </div>
-        <button>Confirm</button>
+        <button onclick="confirm()">Confirm</button>
       </div>
     </div>
 

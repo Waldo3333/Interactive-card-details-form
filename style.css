@@ -1,14 +1,33 @@
-* {
+*{
   font-family: "Space Grotesk", sans-serif;
   Font size: 18px;
 }
+#errorDate{
+  color: red;
+  font-size: 12px;
+}
+#errorCvc{
+  color: red;
+  font-size: 12px;
+  width: 30px;
+  
+}
 
+#errorNum{
+  color: red;
+  font-size: 12px;
+}
+#errorName{
+  color: red;
+  font-size: 12px;
+}
 p{
   Font size: 18px
 }
 body {
   margin: 0;
   Font size: 18px
+  overflow: hidden;
 }
 
 .contenu {
@@ -45,6 +64,7 @@ button {
   background-color: hsl(278, 68%, 11%);
   color: white;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .cvc {
@@ -100,11 +120,15 @@ img{
 .date-text{
   position: absolute;
   z-index: 2;
-  margin-top: 180px;
+  margin-top: 195px;
   margin-left: 340px;
   color: white;
   font-size: 18px;
 }
+
+
+
+
 .cvc-text{
   position: absolute;
   z-index: 2;
@@ -138,7 +162,8 @@ img{
   position: relative;
   background-image: url(./bg-main-desktop.png);
   width: 480px;
-  height: 900px;
+  height: 100vh;
+  
 }
 
 @media(max-width: 1175px){
@@ -181,27 +206,7 @@ img{
 
     @media(max-width: 945px){
 
-      .contenu {
-        display: grid;
-      }
-      .background {
-        position: relative;
-        background-image: url(./bg-main-desktop.png);
-        width: 945px;
-        height: 500px;
-      }
-      .input {
-        display: grid;
-        width: 35px;
-        margin-top: 30px;
-        margin-left: 20px;
-        margin-right: 0;
-      }
-
-
-
-    }
-    @media(max-width: 500px){
+      
 
       .contenu {
         display: grid;
@@ -238,7 +243,7 @@ img{
       .date-text{
         position: absolute;
         z-index: 2;
-        margin-top: 120px;
+        margin-top: 130px;
         margin-left: 230px;
         color: white;
         font-size: 14px;
