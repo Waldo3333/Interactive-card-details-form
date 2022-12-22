@@ -44,7 +44,7 @@
             class="nom"
             placeholder="ex John Do"
           />
-          <p1 id="errorName"></p1>
+          <p id="errorName"></p>
           <p>CARD NUMBER</p>
           <input
             type="text"
@@ -52,7 +52,7 @@
             id="lengthNum"
             placeholder="ex 1234 5678 8765 4321"
           />
-          <p2 id="errorNum"></p2>
+          <br /><span id="errorNum"></span>
         </div>
         <div class="datecvc">
           <div class="date">
@@ -64,7 +64,7 @@
               id="lengthMonth"
             />
             <input type="text" placeholder="YY" class="year" id="lengthYear" />
-            <p3 id="errorDate"></p3>
+            <br></BR><span id="errorDate"></span>
           </div>
           <div class="cvc">
             <p>CVC</p>
@@ -74,13 +74,14 @@
               class="cvcInput"
               id="lengthCvc"
             /><br />
-            <p4 id="errorCvc"></p4>
+            <span id="errorCvc"></span>
           </div>
         </div>
         <button onclick="confirm()">Confirm</button>
       </div>
     </div>
 
+    <script src="./script2.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

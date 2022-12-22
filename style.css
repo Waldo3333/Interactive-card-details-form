@@ -44,6 +44,7 @@ body {
 }
 
 
+
 .info input {
   width: 400px;
 }
@@ -60,6 +61,7 @@ button {
   margin-top: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 400px;
   height: 50px;
   background-color: hsl(278, 68%, 11%);
   color: white;
@@ -168,16 +170,7 @@ img{
 
 @media(max-width: 1175px){
 
-  .input {
-    display: grid;
-    width: 400px;
-    margin : auto;
-    margin-top: 0%;
-    margin-left: 20%;
-    margin-right: 5%;
-  }
-
-  @media(max-width: 1075px){
+  
 
     .input {
       display: grid;
@@ -201,7 +194,7 @@ img{
       padding-left:40px ;
       z-index: 1;
     }
-  }
+  
   
 
     @media(max-width: 945px){
