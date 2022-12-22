@@ -90,22 +90,24 @@ function Achieve() {
   let myNumInput = document.getElementById("lengthNum");
   let myNameInput = document.getElementById("lengthName");
   let myNameRegex = /^[a-zA-Z-\s]+$/;
-  let myNumRegex = /^[0-9]+$/;
+  let myNumRegex = /^[0-9\s]+$/;
 
   if (
     myCvcInput.value.trim().length === 3 &&
     myNumRegex.test(myCvcInput.value) == true &&
     myMonthInput.value.trim().length === 2 &&
-    myNumRegex.test(myMonthInput.value) == true &&
+    myNumRegex.test(myMonthInput.value) === true &&
     myYearInput.value.trim().length === 2 &&
-    myNumRegex.test(myYearInput.value) == true &&
+    myNumRegex.test(myYearInput.value) === true &&
     myNumInput.value.trim().length === 19 &&
-    myNumRegex.test(myNumInput.value) == true &&
-    myNameInput.value.trim() !== "" &&
-    myNameRegex.test(myNameInput.value) == true
+    myNumRegex.test(myNumInput.value) === true &&
+    myNameInput.value !== "" &&
+    myNameRegex.test(myNameInput.value) === true
   ) {
-    alert("ACHIEVE");
-  } else {
-    alert("ERROR");
+    let getForm = document.getElementById("formulaire");
+    let formComplete = document.getElementById("achieve");
+
+    getForm.style.display = "none";
+    formComplete.style.display = "flex";
   }
 }

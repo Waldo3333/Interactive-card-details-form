@@ -2,6 +2,32 @@
   font-family: "Space Grotesk", sans-serif;
   Font size: 18px;
 }
+
+#formulaire{
+  display: none;
+}
+
+#achieve{
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin : auto;
+  margin-top: 15%;
+  margin-left: 20%;
+  margin-right: 5%;
+
+}
+
+#achieve img{
+
+  width: 80px;
+
+}
+
 #errorDate{
   color: red;
   font-size: 12px;
@@ -81,7 +107,7 @@ button {
 
 
 
-img{
+.background img{
   width: 450px;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(20, 13, 13, 0.318);
@@ -174,7 +200,7 @@ img{
 
     .input {
       display: grid;
-      width: 400px;
+      width: 375px;
       margin : auto;
       margin-top: 0%;
       margin-left: 20%;
@@ -194,12 +220,41 @@ img{
       padding-left:40px ;
       z-index: 1;
     }
+    #achieve{
   
+
+      
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 375px;
+      margin : auto;
+      margin-top: 15%;
+      margin-right: 10%;
+  
+      
+      
+    
+    }
+
+    #achieve button {
+      width: 350px;
+    }
   
 
     @media(max-width: 945px){
 
+      #achieve{
+  
+
       
+        
+        margin-left: 0px;
+    
+        
+        
+      
+      }
 
       .contenu {
         display: grid;
@@ -207,11 +262,11 @@ img{
       .background {
         position: relative;
         background-image: url(./bg-main-desktop.png);
-        width: 400px;
+        width: 375px;
         height: 300px;
       }
 
-      img{
+      .background img{
       width: 300px;
        border-radius: 20px;
        box-shadow: 10px 10px 20px rgba(20, 13, 13, 0.318);
