@@ -1,16 +1,14 @@
 *{
   font-family: "Space Grotesk", sans-serif;
-  Font size: 18px;
+  
 }
 
-#formulaire{
-  display: none;
-}
+
 
 #achieve{
   
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -87,7 +85,7 @@ button {
   margin-top: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 400px;
+  width: 408px;
   height: 50px;
   background-color: hsl(278, 68%, 11%);
   color: white;
@@ -220,6 +218,8 @@ button {
       padding-left:40px ;
       z-index: 1;
     }
+
+    
     #achieve{
   
 
@@ -243,7 +243,11 @@ button {
   
 
     @media(max-width: 945px){
+      button{
 
+        width: 343px;
+  
+      }
       #achieve{
   
 
