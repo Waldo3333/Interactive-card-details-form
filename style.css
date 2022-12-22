@@ -3,6 +3,9 @@
   
 }
 
+.info {
+  text-decoration: none;
+}
 
 
 #achieve{
@@ -92,6 +95,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+
 
 .cvc {
   margin-left: 50px;
